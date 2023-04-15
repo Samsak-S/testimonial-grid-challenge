@@ -1,0 +1,120 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: 'Karla', sans-serif;
+    font-size: 13px;
+}
+#testimonial-container{
+    padding:5% 3%;
+}
+body{
+    background-color: hsl(210, 46%, 95%);
+    
+}
+
+#testimonial-1{
+    background-color: hsl(263, 55%, 52%);
+    color: white;
+    position: relative;
+}
+#testimonial-2{
+    background-color: hsl(217, 19%, 35%);
+    color:white;
+}
+#testimonial-3{
+    background-color: white;
+}
+#testimonial-4{
+    background-color: hsl(219, 29%, 14%);
+    color:white;
+
+}
+#testimonial-5{
+    background-color: white;
+}
+
+ .item{
+    margin-bottom: 20px;
+    padding:20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.2);
+ }
+
+ #header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+ }
+
+#header img{
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 2px solid hsl(263, 55%, 52%);
+}
+.headertext p{
+    font-size: 15px;
+    font-weight: light;
+}
+#title1,#title2,#title3,#title4,#title5{
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.transparent{
+    font-size: 0.8rem;
+    opacity: 0.5;
+}
+#quote{
+    opacity: 0.7;
+    font-size: 1.1rem;
+}
+#quotation{
+    position:absolute;
+    right: 15%;
+    top: 0;
+}
+.headertext,#title1{
+    z-index: 3;
+    position: relative;
+}
+
+@media(min-width: 769px){
+    #testimonial-container{
+        display: flex;
+        margin:0 auto;
+        max-width: 70%;
+    }
+    #left{
+        display:flex;
+        flex-direction: column;
+        flex-basis: 75%;
+    }
+    #top{
+        display:flex;
+        flex-direction: row;
+    }
+    #bottom{
+        display:flex;
+        flex-direction:row;
+    }
+    #right{
+        display:flex;
+        flex-basis: 25%;
+    }
+    #testimonial-1{
+      flex-basis: 70%;
+    }
+    #testimonial-2{
+      flex-basis: 30%;
+    }
+    #testimonial-3{
+       flex-basis: 30%;
+    }
+    #testimonial-4{
+        flex-basis: 70%;    
+    }
+    #left .item{
+        margin-right: 20px;
+    }
+}
